@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav#heading {
+    height: 50px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+
+nav#heading>div#left-nav {
+    width: 50vw;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 60px;
+}
+
+nav#heading>div#right-nav {
+    width: 50vw;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 60px;
+}
+
+nav#heading>div#right-nav p {
+    margin-right: 30px;
+}
+
+nav#heading>div#right-nav p a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+
+main div#left-main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 60px;
+    padding: 30px 0;
+}
+
+div#left-main>p:first-child {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+div#left-main>p:nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-top: 40px;
+}
+
+div#btn-main button {
+    width: 10vw;
+    height: 4.5vh;
+    margin: 30px 0;
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+div#btn-main button#login{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+main div#right-main {
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-left: 60px;
+}
+
+main div#right-main img {
+    width: 47vw;
+    height: 75vh;
+    position: relative;
+    left: -100px;
+}
+
+@media screen and (max-width: 768px) {
+    nav#heading {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    nav#heading > div#left-nav {
+        font-size: 18px;
+        padding-left: 0;
+    }
+
+    nav#heading > div#right-nav {
+        font-size: 16px;
+        padding-right: 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    main div#left-main {
+        width: 80vw;
+        height: auto;
+        margin-left: 30px;
+        margin-top: 30px;
+        align-items: start;
+    }
+
+    div#left-main > p:first-child {
+        font-size: 50px;
+    }
+
+    div#left-main > p:nth-child(2) {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    div#btn-main {
+        flex-direction: column;
+        /* align-items: start; */
+    }
+
+    div#btn-main button {
+        width: 50%;
+        max-width: 200px;
+        height: 40px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    main div#right-main {
+        width: 80vw;
+        margin-left: 0;
+        margin-top: 30px;
+        align-items: center;
+        height: auto;
+    }
+
+    main div#right-main img {
+        width: 100%;
+        height: auto;
+        position: static;
+        left: auto;
+    }
+}

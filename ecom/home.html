@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store | MeShop</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="fetchingAPI()">
+    <nav id="heading">
+        <div id="left-nav">
+            <p>MeShop</p>
+        </div>
+        <div id="right-nav">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="login.html">Login</a></p>
+            <p><a href="signup.html">Signup</a></p>
+            <p><a href="cart.html">My Cart</a></p>
+            <p><a href="profile.html">Profile</a></p>
+        </div>
+    </nav>
+
+    <aside>
+        <div id="aside-one">
+            <label for="colors" id="label-colors">Colors</label><br><br>
+
+            <input type="checkbox" id="color-red" name="color" value="red">
+            <label for="color-red">Red</label><br>
+
+            <input type="checkbox" id="color-green" name="color" value="green">
+            <label for="color-green">Green</label><br>
+
+            <input type="checkbox" id="color-black" name="color" value="black">
+            <label for="color-black">Black</label><br>
+
+            <input type="checkbox" id="color-white" name="color" value="white">
+            <label for="color-white">White</label><br>
+
+            <input type="checkbox" id="color-blue" name="color" value="blue">
+            <label for="color-blue">Blue</label><br>
+
+        </div>
+        <hr>
+        <div id="aside-two">
+            <label for="size" id="label-size">Sizes</label><br><br>
+
+            <input type="checkbox" id="size-s" name="size" value="S">
+            <label for="size-s">S</label><br>
+
+            <input type="checkbox" id="size-m" name="size" value="M">
+            <label for="size-m">M</label><br>
+
+            <input type="checkbox" id="size-l" name="size" value="L">
+            <label for="size-l">L</label><br>
+
+            <input type="checkbox" id="size-xl" name="size" value="XL">
+            <label for="size-xl">XL</label><br>
+        </div>
+        <hr>
+        <div id="aside-three">
+            <label for="rating" id="label-rating">Rating:</label><br>
+            <input type="range" id="rating" name="rating" min="0" max="5" step="1">
+            <div id="range-min-max">
+                <span>0</span>
+                <span>5</span>
+            </div>
+        </div>
+        <hr>
+        <div id="aside-four">
+            <label for="PR" id="label-PR">Price Range:</label><br><br>
+
+            <input type="checkbox" id="0-25" name="PriceRange" value="0-25">
+            < <label for="0-25">$0 to $25</label><br>
+
+                <input type="checkbox" id="25-50" name="PriceRange" value="25-50">
+                <label for="25-50">$25 to $50</label><br>
+
+                <input type="checkbox" id="50-100" name="PriceRange" value="50-100">
+                <label for="50-100">$50 to $100</label><br>
+
+                <input type="checkbox" id="100plus" name="PriceRange" value="100plus">
+                <label for="100plus">$100 onwards</label><br>
+        </div>
+
+        <div id="aside-five">
+            <button type="submit">Apply Filter</button>
+        </div>
+    </aside>
+
+    <div id="main-fixed-div">
+        <div id="main-search">
+            <input type="text" id="main-search-input" placeholder="Search for items...">
+        </div>
+        <div id="main-buttons">
+            <button class="main-buttons-button" onclick="showAll()">All</button>
+            <button class="main-buttons-button" onclick="showMens()">Mens</button>
+            <button class="main-buttons-button" onclick="showWomens()">Womens</button>
+            <button class="main-buttons-button" onclick="showJewellery()">Jewellery</button>
+            <button class="main-buttons-button" onclick="showElectronics()">Electronics</button>
+        </div>
+    </div>
+    <main>
+        <div id="main-relative-div">
+            <p id="first-p">Men's Clothing</p>
+            <div id="mens-clothing">
+                <hr>
+                <div id="slider-container-mens">
+                    
+                </div>
+            </div>
+            <p id="second-p">women's Clothing</p>
+            <div id="womens-clothing">
+                <hr>
+                <div id="slider-container-womens">
+                    
+                </div>
+            </div>
+            <p id="third-p">Jewellery</p>
+            <div id="Jewellery">
+                <hr>
+                <div id="slider-container-Jewelley">
+                    
+                </div>
+            </div>
+            <p id="forth-p">Electronics</p>
+            <div id="Electronics">
+                <hr>
+                <div id="slider-container-Electronics">
+                    
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

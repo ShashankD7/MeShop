@@ -1,0 +1,241 @@
+main {
+  width: 100vw;
+    position: relative;
+    top: 150px;
+    background-color: white;
+}
+
+h1 {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 50px;
+    z-index: 1000;
+}
+
+body>p {
+  position: fixed;
+  top: 80px;
+  left: 40px;
+  z-index: 1001;
+  font-size: 30px;
+  font-weight: 450;
+  font-family: 'Inter', sans-serif;
+  background-color: skyblue;
+  height: 40px;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+main>div#card-container-in-cart {
+  padding: 0;
+}
+
+main>div#main-first-div>div#card-container-in-cart {
+    
+    width: 70vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(194, 199, 202);
+    padding: 0;
+    margin: 30px 50px;
+}
+
+main>div#main-first-div div.card {
+    width: 250px;
+    height: 430px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+main>div#main-first-div div.card img {
+    width: 100%;
+    height: 300px;
+    margin: 0px 15px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+main>div#main-first-div div.card .divPS {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+#color-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+
+  main>div#main-first-div div.card p#color-p {
+    position: relative;
+    left: -85px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  main>div#main-first-div div.card .divForStar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main>div#main-first-div div.card .divForStar .divForStarLeft {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  main>div#main-first-div div.card .divForStar .divForStarLeft p {
+    color: gray;
+  }
+
+  main>div#main-first-div div.card .divForStar .divForStarRight {
+    display: flex;
+    justify-content: end;
+    margin-right: 5px;
+    font-style: italic;
+    color: gray;
+  }
+
+  main>div#main-first-div div.card .divForStar .divForStarLeft span {
+    display: flex;
+    align-items: center;
+  }
+
+  main>div#main-first-div div.card .divForStar .divForStarLeft span img {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
+
+  main>div#main-first-div div.card .buttonAddToCart {
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    position: relative;
+    top: 26px;
+    cursor: pointer;
+  }
+
+  aside#myAside {
+    /* max-height: fit-content; */
+    width: 300px;
+    background-color: #000000;
+    position: absolute;
+    top: 180px;
+    right: 30px;
+  }
+
+  /* Styles for the table */
+#myAside table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#myAside th {
+  background-color: #000000;
+  color: skyblue;
+  padding: 10px;
+  text-align: start;
+}
+
+#myAside td {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  color: white;
+}
+
+#myAside td:last-child {
+  color: greenyellow;
+}
+
+/* Styles for the checkout button */
+#myAside .checkout-button {
+  width:auto;
+  background-color: yellow;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+body>p span#left-span-for-dot, body>p span#right-span-for-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: white;
+  z-index: 1002;
+}
+
+body>section>div {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px;
+}
+
+body>section {
+  width: 40vw;
+    position: relative;
+    top: 150px;
+    background-color: white;
+    left: 30px;
+    border: 2px solid black;
+    margin: 30px;
+    display: none;
+}
+
+body>section button {
+  background-color: yellow;
+  color: #000000;
+  border: none;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+main>div#main-first-div div.card .buttonRemoveFromCart {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.removeButton {
+  position: relative;
+  top: -420px;
+  left: 120px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp | MeShop</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="heading">
+        <div id="left-nav">
+            <p>MeShop</p>
+        </div>
+        <div id="right-nav">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="login.html">Login</a></p>
+            <p><a href="signup.html">Signup</a></p>
+            <p><a href="cart.html">My Cart</a></p>
+            <p><a href="profile.html">Profile</a></p>
+        </div>
+    </nav>
+
+    <div id="main-container">
+        <p id="heading">SignUp</p>
+        <div>
+            <label for="name">Username :</label>
+            <input type="text" name="name" id="signup-Username-input">
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="signup-email-input">
+        </div>
+        <div>
+            <label for="pass">Enter Password :</label>
+            <input type="password" name="pass" id="signup-pass-input">
+        </div>
+        <div>
+            <label for="pass">Confirm Password :</label>
+            <input type="password" name="pass" id="signup-pass-conf-input">
+        </div>
+        <div id="signup-btn">
+            <p></p>
+            <button onclick="getSignedUp()">Signup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
